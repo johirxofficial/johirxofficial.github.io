@@ -1,1 +1,354 @@
-johirxofficial.github.io
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Johïrul Islàm · johirxofficial</title>
+  <meta name="description" content="Johïrul Islàm – storyteller, prompt engineer, vibe coder & customer care executive."/>
+  <meta name="author" content="johirxofficial"/>
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/263008436?v=4" />
+
+  <!-- Tailwind + Lucide -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    body {
+      background: #020617; /* slate‑950 */
+      color: #e2e8f0;
+      overflow-x: hidden;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    /* card radius reduced (was 28px, now 12px) */
+    .card {
+      background: linear-gradient(145deg, #0f172a, #1e293b);
+      border: 1px solid rgba(56, 189, 248, 0.08);
+      border-radius: 12px;           /* reduced from 28px */
+      transition: all 0.25s ease;
+    }
+    .card:hover {
+      border-color: rgba(56, 189, 248, 0.25);
+      box-shadow: 0 14px 30px -12px rgba(56, 189, 248, 0.2);
+    }
+    .timeline {
+      border-left: 2px solid rgba(56, 189, 248, 0.2);
+      padding-left: 28px;
+      margin-left: 14px;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2.2rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -35px;
+      top: 26px;
+      width: 12px;
+      height: 12px;
+      background: #020617;
+      border: 2px solid #38bdf8;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px rgba(56,189,248,0.15);
+    }
+    .pulse-dot {
+      width: 12px; height: 12px;
+      background: #22c55e;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(34,197,94,0.6);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34,197,94,0.6); }
+      70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(34,197,94,0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* small radius for inline elements */
+    .rounded-small {
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-sky-500/30 selection:text-sky-200">
+
+<!-- ===== HEADER – no "🌙 online", just logo ===== -->
+<div class="w-full py-3 px-6 flex items-center justify-between bg-[#020617] border-b border-slate-800/40">
+  <a href="#" class="flex items-center gap-2 group">
+    <img src="https://avatars.githubusercontent.com/u/263008436?v=4" alt="Johirul" class="w-9 h-9 rounded-full border-2 border-slate-700 group-hover:border-sky-400 transition-colors"/>
+    <span class="font-semibold text-base text-slate-100 tracking-wide">johirx<span class="text-sky-400">official</span></span>
+  </a>
+  <!-- completely empty right side – no text, no icon -->
+  <div></div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="min-h-screen flex items-center justify-center pt-16 pb-20 px-6">
+  <div class="fade-in text-center max-w-3xl mx-auto">
+    <div class="relative inline-block mb-8">
+      <img src="https://avatars.githubusercontent.com/u/263008436?v=4" alt="Profile" class="w-36 h-36 md:w-44 md:h-44 rounded-full mx-auto object-cover border-4 border-slate-800 shadow-2xl shadow-sky-900/20"/>
+      <span class="absolute bottom-3 right-4 pulse-dot border-2 border-[#020617]" title="online"></span>
+    </div>
+
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">
+      Johïrul <span class="gradient-text">Islàm</span>
+    </h1>
+
+    <p class="text-lg md:text-xl text-slate-400 font-light italic mb-8">
+      "Never replies fast, he replies final..! 🙌🕶️⚡"
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-3 mb-10">
+      <span class="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 border border-slate-700/50 rounded-full text-sm text-sky-200"><i data-lucide="pen-tool" class="w-4 h-4"></i> Storyteller</span>
+      <span class="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 border border-slate-700/50 rounded-full text-sm text-indigo-200"><i data-lucide="cpu" class="w-4 h-4"></i> Prompt Engineer</span>
+      <span class="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 border border-slate-700/50 rounded-full text-sm text-purple-200"><i data-lucide="code" class="w-4 h-4"></i> Vibe Coder</span>
+      <span class="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 border border-slate-700/50 rounded-full text-sm text-emerald-200"><i data-lucide="headset" class="w-4 h-4"></i> Customer Care</span>
+    </div>
+
+    <p class="text-slate-300 leading-relaxed text-lg md:text-xl font-light">
+      Known online as <span class="text-white font-medium">@johirxofficial</span>, 
+      I blend technical curiosity with expressive storytelling. 
+      Working in network support while exploring digital identity, 
+      prompt engineering, and creative communication across the web. 🌐✨
+    </p>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="py-24 px-6 border-t border-slate-800/50">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center fade-in">Personal Profile <span class="text-sky-400">💫</span></h2>
+    
+    <div class="grid md:grid-cols-5 gap-8">
+      <div class="card p-8 md:col-span-3 fade-in">
+        <h3 class="text-2xl font-semibold mb-6 flex items-center gap-3">
+          <span class="p-2 bg-sky-500/10 rounded-lg"><i data-lucide="user" class="w-6 h-6 text-sky-400"></i></span> 
+          Who Am I?
+        </h3>
+        <div class="space-y-5 text-slate-300 leading-relaxed font-light">
+          <p>
+            I'm a Bangladesh-based internet professional and storyteller. 
+            Living in <strong class="text-slate-100 font-semibold">Maijdee Court, Chittagong</strong>, 
+            originally from <strong class="text-slate-100 font-semibold">Noakhali Sadar Upazila</strong>. 🇧🇩
+          </p>
+          <p>
+            My online identity focuses on blending technology, community engagement, 
+            and narrative expression. Through posts, reels, and conversations, 
+            I maintain a distinctive digital voice that reflects personality, 
+            confidence, and genuine connection.
+          </p>
+          <p>
+            Beyond my professional role, I'm passionate about creative internet culture, 
+            prompt engineering, and what I call <strong class="text-sky-300 font-medium">"vibe coding"</strong> — 
+            a creative mix of logic and personality in technology. 💻✨
+          </p>
+        </div>
+      </div>
+
+      <div class="card p-8 md:col-span-2 fade-in">
+        <h3 class="text-2xl font-semibold mb-6 flex items-center gap-3">
+          <span class="p-2 bg-indigo-500/10 rounded-lg"><i data-lucide="info" class="w-6 h-6 text-indigo-400"></i></span>
+          Quick Facts
+        </h3>
+        <div class="space-y-4 text-sm md:text-base">
+          <div class="flex justify-between items-center pb-3 border-b border-slate-700/50">
+            <span class="text-slate-400">Name</span>
+            <span class="text-slate-100 font-medium text-right">Johïrul Islàm</span>
+          </div>
+          <div class="flex justify-between items-center pb-3 border-b border-slate-700/50">
+            <span class="text-slate-400">Username</span>
+            <span class="text-sky-400 font-medium text-right">@johirxofficial</span>
+          </div>
+          <div class="flex justify-between items-center pb-3 border-b border-slate-700/50">
+            <span class="text-slate-400">Location</span>
+            <span class="text-slate-100 font-medium text-right">Maijdee Court</span>
+          </div>
+          <div class="flex justify-between items-center pb-3 border-b border-slate-700/50">
+            <span class="text-slate-400">Languages</span>
+            <span class="text-slate-100 font-medium text-right">Bengali • English • Urdu</span>
+          </div>
+          <div class="flex justify-between items-center pt-1">
+            <span class="text-slate-400">Status</span>
+            <span class="text-slate-100 font-medium text-right">Single • Male</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="py-24 px-6 border-t border-slate-800/50 bg-slate-900/30">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center fade-in">Journey & Education <span class="text-indigo-400">🚀</span></h2>
+    
+    <div class="timeline">
+      <div class="timeline-item fade-in">
+        <div class="card p-8">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+            <div>
+              <h3 class="text-xl md:text-2xl font-semibold text-white">Customer Care Executive</h3>
+              <p class="text-sky-400 font-medium mt-1 flex items-center gap-2">
+                <i data-lucide="building-2" class="w-4 h-4"></i> Noakhali SuperNet Broadband
+              </p>
+            </div>
+            <span class="inline-block bg-sky-500/10 text-sky-300 px-4 py-1.5 rounded-full border border-sky-500/20 text-sm font-medium whitespace-nowrap">
+              Jan 2024 — Present
+            </span>
+          </div>
+          <p class="text-slate-300 font-light leading-relaxed">
+            Responsible for customer support, network troubleshooting, and technical guidance 
+            for broadband clients. This role combines communication skills with network-level 
+            problem solving. I approach support not only as a technician, but also as a 
+            social communicator who truly understands user needs and experiences. 🤝🔧
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="card p-8">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+            <div>
+              <h3 class="text-xl md:text-2xl font-semibold text-white">Jamia Miftahul Ulum</h3>
+              <p class="text-indigo-400 font-medium mt-1 flex items-center gap-2">
+                <i data-lucide="graduation-cap" class="w-4 h-4"></i> Dhannapur Madrasa
+              </p>
+            </div>
+            <span class="inline-block bg-slate-800 text-slate-300 px-4 py-1.5 rounded-full border border-slate-700 text-sm font-medium whitespace-nowrap">
+              July 2020 — Dec 2022
+            </span>
+          </div>
+          <p class="text-slate-300 font-light leading-relaxed">
+            Faith-based education combined with community discipline and moral development. 
+            The experience contributed to leadership values, social responsibility, 
+            and structured thinking. 🌱
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IDENTITY ===== -->
+<section id="identity" class="py-24 px-6 border-t border-slate-800/50">
+  <div class="max-w-3xl mx-auto fade-in">
+    <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">Digital Identity <span class="text-purple-400">✨</span></h2>
+    
+    <div class="card p-8 md:p-10 text-center space-y-6">
+      <div class="inline-flex justify-center items-center w-16 h-16 rounded-full bg-purple-500/10 mb-2">
+        <i data-lucide="fingerprint" class="w-8 h-8 text-purple-400"></i>
+      </div>
+      
+      <p class="text-slate-300 font-light leading-relaxed text-lg">
+        The username <strong class="text-white font-medium">@johirxofficial</strong> represents a consistent 
+        personal brand across social platforms. The identity merges professionalism with creativity. 🎨
+      </p>
+      
+      <p class="text-slate-300 font-light leading-relaxed text-lg">
+        My online presence often includes expressive captions, symbolic emojis, 
+        and reflective storytelling. This approach makes content feel personal, 
+        relatable, and emotionally engaging. 💬❤️
+      </p>
+
+      <div class="pt-6">
+        <blockquote class="text-xl md:text-2xl font-medium text-white italic py-6 px-4 bg-slate-800/40 rounded-2xl border border-slate-700/50">
+          "Never replies fast, he replies final." <span class="text-sky-400">🎯</span>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER – restructured: no thanks text, no bottom icons, left/right balanced ===== -->
+<footer class="bg-[#040a1e] border-t border-slate-800/60 pt-14 pb-6">
+  <div class="max-w-6xl mx-auto px-6">
+    
+    <!-- main footer content: left-aligned columns (friendly) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 fade-in">
+      
+      <!-- column 1: left aligned (avatar + short intro) -->
+      <div class="flex flex-col items-start">
+        <img src="https://avatars.githubusercontent.com/u/263008436?v=4" class="w-14 h-14 rounded-full mb-3 border-2 border-slate-700" alt="johir">
+        <h4 class="text-white font-medium text-base">Johïrul Islàm</h4>
+        <p class="text-slate-400 text-xs mt-1 max-w-xs leading-relaxed">
+          storyteller · prompt engineer · vibe coder.<br> 
+          always around, never rushed 🌙
+        </p>
+        <div class="mt-3 flex gap-3 text-slate-500 text-xs">
+          <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-indigo-400"></i> Maijdee Court</span>
+          <span class="flex items-center gap-1"><i data-lucide="globe" class="w-3.5 h-3.5 text-sky-400"></i> GMT+6</span>
+        </div>
+      </div>
+
+      <!-- column 2: left aligned connect links -->
+      <div class="flex flex-col items-start">
+        <h4 class="text-white font-semibold mb-3 flex items-center gap-2 text-base">
+          <i data-lucide="message-circle" class="w-4 h-4 text-sky-400"></i> Connect
+        </h4>
+        <ul class="space-y-2 text-sm text-slate-400">
+          <li><a href="#" class="hover:text-sky-400 transition flex items-center gap-2"><i data-lucide="send" class="w-4 h-4"></i> Telegram</a></li>
+          <li><a href="#" class="hover:text-pink-400 transition flex items-center gap-2"><i data-lucide="instagram" class="w-4 h-4"></i> Instagram</a></li>
+          <li><a href="#" class="hover:text-slate-100 transition flex items-center gap-2"><i data-lucide="twitter" class="w-4 h-4"></i> X / Twitter</a></li>
+        </ul>
+      </div>
+
+      <!-- column 3: left aligned note – no "thanks for stopping by" text -->
+      <div class="flex flex-col items-start">
+        <h4 class="text-white font-semibold mb-3 flex items-center gap-2 text-base">
+          <i data-lucide="smile" class="w-4 h-4 text-amber-400"></i> note
+        </h4>
+        <p class="text-sm text-slate-400 leading-relaxed max-w-xs">
+          if you wanna chat about broadband, storytelling,<br> or just share a meme — I'm probably online.
+        </p>
+        <!-- completely removed any extra text/icon line -->
+      </div>
+    </div>
+
+    <!-- bottom row: left side copyright only, right side empty (no icons, no thanks) -->
+    <div class="mt-10 pt-5 border-t border-slate-800/40 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-slate-500">
+      <!-- left: copyright (all rights reserved) – no extra icons -->
+      <p class="flex items-center gap-1.5">
+        <span>© 2024 <span class="text-slate-300 font-medium">johirxofficial</span></span>
+        <span class="w-1 h-1 bg-slate-700 rounded-full"></span>
+        <span>all rights reserved</span>
+      </p>
+      <!-- right side: absolutely nothing – matches flat minimal design -->
+      <div></div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- scripts -->
+<script>
+  lucide.createIcons();
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px' });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toffeex - Live TV Streaming</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0F172A',
+                            accent: '#FF5252',
+                            accentHover: '#FF3333',
+                            surface: '#1E293B'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0F172A; }
+        ::-webkit-scrollbar-thumb { background: #FF5252; border-radius: 4px; }
+        html { scroll-behavior: smooth; }
+        
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-white font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass-card">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <i class="fa-solid fa-tv text-brand-accent text-3xl"></i>
+                    <span class="font-bold text-2xl tracking-wider">TOFFEEX</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-brand-accent transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#features" class="hover:text-brand-accent transition-colors px-3 py-2 rounded-md text-sm font-medium">Features</a>
+                        <a href="#download" class="bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2 rounded-full text-sm font-bold transition-all shadow-lg shadow-red-500/30">Download Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-accent/20 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+                Stream Your Vibe with <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-brand-accent">Toffeex Live</span>
+            </h1>
+            <p class="mt-4 text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+                The ultimate, lightweight, and dynamic live TV streaming experience. Available now for Android, Android TV, and Windows Desktop.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#download" class="bg-brand-accent hover:bg-brand-accentHover text-white font-bold py-4 px-8 rounded-full transition-all flex items-center justify-center gap-3 shadow-lg shadow-red-500/25">
+                    <i class="fa-solid fa-cloud-arrow-down text-xl"></i>
+                    Get The App
+                </a>
+                <a href="#features" class="bg-brand-surface hover:bg-gray-700 text-white font-bold py-4 px-8 rounded-full transition-all flex items-center justify-center gap-3 border border-gray-600">
+                    Explore Features
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-brand-surface/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-brand-accent uppercase tracking-widest text-sm mb-2">Why Toffeex?</h2>
+                <h3 class="text-4xl font-extrabold">Built for Performance</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-brand-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-bolt text-brand-accent text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Ultra Lightweight</h4>
+                    <p class="text-gray-400">Zero cache bloating. Optimized architecture ensures smooth streaming even on low-end devices.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-brand-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-rotate text-brand-accent text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Dynamic Data Sync</h4>
+                    <p class="text-gray-400">Channels and categories are fetched remotely. No need to update the app for new channels.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-brand-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-laptop-mobile text-brand-accent text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Cross-Platform</h4>
+                    <p class="text-gray-400">Responsive grids that adapt instantly whether you are on a Mobile, Tablet, Desktop, or Android TV.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="py-24 relative">
+        <div class="absolute right-0 bottom-0 w-96 h-96 bg-brand-accent/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-10 md:p-16 border-t-4 border-brand-accent text-center">
+                <h2 class="text-4xl font-extrabold mb-4">Ready to Start Watching?</h2>
+                <p class="text-gray-400 mb-10 max-w-2xl mx-auto">Download the latest Version 1.2.0. Select your platform below to get the official release.</p>
+                
+                <div class="flex flex-col md:flex-row justify-center gap-6">
+                    
+                    <a href="#" class="group relative w-full md:w-auto flex flex-col items-center p-6 bg-brand-surface rounded-2xl border border-gray-700 hover:border-brand-accent transition-all">
+                        <i class="fa-brands fa-android text-5xl text-green-500 mb-4 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xl font-bold mb-1">Android / TV</span>
+                        <span class="text-sm text-gray-400 mb-4">.apk format</span>
+                        <span class="inline-block bg-green-500/20 text-green-400 py-2 px-6 rounded-full font-semibold text-sm">Download APK</span>
+                    </a>
+
+                    <a href="#" class="group relative w-full md:w-auto flex flex-col items-center p-6 bg-brand-surface rounded-2xl border border-gray-700 hover:border-brand-accent transition-all">
+                        <i class="fa-brands fa-windows text-5xl text-blue-500 mb-4 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xl font-bold mb-1">Windows PC</span>
+                        <span class="text-sm text-gray-400 mb-4">.exe format</span>
+                        <span class="inline-block bg-blue-500/20 text-blue-400 py-2 px-6 rounded-full font-semibold text-sm">Download EXE</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0b1121] py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-tv text-brand-accent"></i>
+                <span class="font-bold text-lg tracking-wider">TOFFEEX</span>
+            </div>
+            <div class="text-gray-500 text-sm text-center md:text-left">
+                &copy; <span id="year"></span> johirxofficial. All rights reserved.
+            </div>
+            <div class="text-gray-500 text-sm italic">
+                Powered by Shadow 😈
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,1 +1,6 @@
-
+{
+  "appName": "Toffeex Live",
+  "m3uUrl": "https://raw.githubusercontent.com/johirxofficial/Toffee-Auto-Playlist/refs/heads/main/toffee_playlist.m3u",
+  "contactUrl": "https://johirxofficial.github.io",
+  "aboutText": "Developed for johirxofficial. Version 1.2.0 - Fully Dynamic & Lightweight."
+}

@@ -1,15 +1,15 @@
 #EXTM3U
 
 #Category: ISLAMIC
-#EXTINF:-1 tvg-id="2" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Islamic", MADNI TV
+#EXTINF:-1 tvg-id="2" tvg-logo="https://avatars.githubusercontent.com/u/263008436?v=4&size=128" group-title="Islamic", MADNI TV
 https://filoox.vercel.app/live/2.m3u8
-#EXTINF:-1 tvg-id="3" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Islamic", ARY QTV
+#EXTINF:-1 tvg-id="3" tvg-logo="https://avatars.githubusercontent.com/u/263008436?v=4&size=128" group-title="Islamic", ARY QTV
 https://filoox.vercel.app/live/3.m3u8
 #EXTINF:-1 tvg-id="7" tvg-logo="https://www.lyngsat.com/logo/tv/hh/hadi_tv_pk.png" group-title="Islamic", HADI TV
 https://filoox.vercel.app/live/7.m3u8
-#EXTINF:-1 tvg-id="10" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Islamic", MAKKA TV LIVE
+#EXTINF:-1 tvg-id="10" tvg-logo="https://avatars.githubusercontent.com/u/263008436?v=4&size=128" group-title="Islamic", MAKKA TV LIVE
 https://filoox.vercel.app/live/10.m3u8
-#EXTINF:-1 tvg-id="11" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Islamic", PEACE TV URDU
+#EXTINF:-1 tvg-id="11" tvg-logo="https://avatars.githubusercontent.com/u/263008436?v=4&size=128" group-title="Islamic", PEACE TV URDU
 https://filoox.vercel.app/live/11.m3u8
 #EXTINF:-1 tvg-id="103661" tvg-logo="http://s3.i3ns.net/cs/etc/blank-icon.png" group-title="Islamic", IQRA Bangla TV
 https://filoox.vercel.app/live/103661.m3u8
@@ -85,7 +85,7 @@ https://filoox.vercel.app/live/221339.m3u8
 https://filoox.vercel.app/live/25983.m3u8
 #EXTINF:-1 tvg-id="103688" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e4/Hum_TV_2013.png" group-title="Pakistan", HUM EUROPE
 https://filoox.vercel.app/live/103688.m3u8
-#EXTINF:-1 tvg-id="103689" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Pakistan", HUM MASALA
+#EXTINF:-1 tvg-id="103689" tvg-logo="https://avatars.githubusercontent.com/u/263008436?v=4&size=128" group-title="Pakistan", HUM MASALA
 https://filoox.vercel.app/live/103689.m3u8
 #EXTINF:-1 tvg-id="207397" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b5/22-35-30-cropped-pashto-logo.png" group-title="Pakistan", Hum Pashto
 https://filoox.vercel.app/live/207397.m3u8
@@ -113,7 +113,7 @@ https://filoox.vercel.app/live/150480.m3u8
 https://filoox.vercel.app/live/150482.m3u8
 #EXTINF:-1 tvg-id="76723" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2016_Discovery_Kids_logo.svg/220px-2016_Discovery_Kids_logo.svg.png" group-title="Kids", Discovery Kids
 https://filoox.vercel.app/live/76723.m3u8
-#EXTINF:-1 tvg-id="150479" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Kids", Chutti TV
+#EXTINF:-1 tvg-id="150479" tvg-logo="https://avatars.githubusercontent.com/u/263008436?v=4&size=128" group-title="Kids", Chutti TV
 https://filoox.vercel.app/live/150479.m3u8
 #EXTINF:-1 tvg-id="167551" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/2014_Disney_Channel_logo.svg/1200px-2014_Disney_Channel_logo.svg.png" group-title="Kids", DISNEY HD
 https://filoox.vercel.app/live/167551.m3u8
@@ -135,7 +135,7 @@ https://filoox.vercel.app/live/66203.m3u8
 https://filoox.vercel.app/live/66226.m3u8
 #EXTINF:-1 tvg-id="66289" tvg-logo="https://static.epg.best/in/9XTashan.in.png" group-title="Music", 9x Tashan
 https://filoox.vercel.app/live/66289.m3u8
-#EXTINF:-1 tvg-id="112988" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Music", Mastii
+#EXTINF:-1 tvg-id="112988" tvg-logo="https://avatars.githubusercontent.com/u/263008436?v=4&size=128" group-title="Music", Mastii
 https://filoox.vercel.app/live/112988.m3u8
 
 #Category: INDIAN ENTERTAINMENT
@@ -173,7 +173,7 @@ https://filoox.vercel.app/live/206287.m3u8
 #Category: BANGLADESH
 #EXTINF:-1 tvg-id="245893" tvg-logo="http://openboxv8s.com/india/zee_bangla.jpg" group-title="Bangladesh", Zee Bangla HD
 https://filoox.vercel.app/live/245893.m3u8
-#EXTINF:-1 tvg-id="245895" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Bangladesh", Colors Bangla
+#EXTINF:-1 tvg-id="245895" tvg-logo="https://avatars.githubusercontent.com/u/263008436?v=4&size=128" group-title="Bangladesh", Colors Bangla
 https://filoox.vercel.app/live/245895.m3u8
 #EXTINF:-1 tvg-id="245897" tvg-logo="http://openboxv8s.com/india/zee_bangla_cinema.jpg" group-title="Bangladesh", Zee Bangla Cinema
 https://filoox.vercel.app/live/245897.m3u8

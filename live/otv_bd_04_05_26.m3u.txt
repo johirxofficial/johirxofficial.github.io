@@ -1,0 +1,193 @@
+#EXTM3U
+
+#Category: ISLAMIC
+#EXTINF:-1 tvg-id="2" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Islamic", MADNI TV
+https://filoox.vercel.app/live/2.m3u8
+#EXTINF:-1 tvg-id="3" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Islamic", ARY QTV
+https://filoox.vercel.app/live/3.m3u8
+#EXTINF:-1 tvg-id="7" tvg-logo="https://www.lyngsat.com/logo/tv/hh/hadi_tv_pk.png" group-title="Islamic", HADI TV
+https://filoox.vercel.app/live/7.m3u8
+#EXTINF:-1 tvg-id="10" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Islamic", MAKKA TV LIVE
+https://filoox.vercel.app/live/10.m3u8
+#EXTINF:-1 tvg-id="11" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Islamic", PEACE TV URDU
+https://filoox.vercel.app/live/11.m3u8
+#EXTINF:-1 tvg-id="103661" tvg-logo="http://s3.i3ns.net/cs/etc/blank-icon.png" group-title="Islamic", IQRA Bangla TV
+https://filoox.vercel.app/live/103661.m3u8
+
+#Category: CRICKET & SPORTS
+#EXTINF:-1 tvg-id="217968" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e4/PTV_Sports.png" group-title="Sports", PTV SPORTS HD
+https://filoox.vercel.app/live/217968.m3u8
+#EXTINF:-1 tvg-id="167568" tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/5f/Geo_Super_logo.png" group-title="Sports", Geo Super HD
+https://filoox.vercel.app/live/167568.m3u8
+#EXTINF:-1 tvg-id="167569" tvg-logo="https://www.medianews4u.com/wp-content/uploads/2015/02/df8bdc0787eb68c35292ff74fa60466b-2-3.jpg" group-title="Sports", TEN SPORTS
+https://filoox.vercel.app/live/167569.m3u8
+#EXTINF:-1 tvg-id="221417" tvg-logo="http://opplextv.com/logo/ASPORTSARY.jfif" group-title="Sports", A Sports HD
+https://filoox.vercel.app/live/221417.m3u8
+#EXTINF:-1 tvg-id="167570" tvg-logo="https://static.epg.best/in/SonyTEN1.in.png" group-title="Sports", SONY TEN 1 HD
+https://filoox.vercel.app/live/167570.m3u8
+#EXTINF:-1 tvg-id="167571" tvg-logo="https://static.epg.best/in/SonyTEN2.in.png" group-title="Sports", SONY TEN 2 HD
+https://filoox.vercel.app/live/167571.m3u8
+#EXTINF:-1 tvg-id="167572" tvg-logo="https://static.epg.best/in/SonyTEN3.in.png" group-title="Sports", SONY TEN 3 HD
+https://filoox.vercel.app/live/167572.m3u8
+#EXTINF:-1 tvg-id="167595" tvg-logo="https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/general_content/PGT_1624_1.png" group-title="Sports", SONY TEN 4 HD
+https://filoox.vercel.app/live/167595.m3u8
+#EXTINF:-1 tvg-id="167580" tvg-logo="https://dtat2ks7dludr.cloudfront.net/spnsportsindia/channel_logos/SONY_SportsTen5_HD.png" group-title="Sports", SONY TEN 5 HD
+https://filoox.vercel.app/live/167580.m3u8
+#EXTINF:-1 tvg-id="167587" tvg-logo="https://www.pngkey.com/png/detail/244-2446295_pakistan-ten-sports-channel-logo.png" group-title="Sports", Ten Cricket
+https://filoox.vercel.app/live/167587.m3u8
+#EXTINF:-1 tvg-id="167575" tvg-logo="https://static.epg.best/cn/StarSports1.cn.png" group-title="Sports", Star Sports 1 HD
+https://filoox.vercel.app/live/167575.m3u8
+#EXTINF:-1 tvg-id="167576" tvg-logo="https://static.epg.best/in/StarSports2.in.png" group-title="Sports", Star Sports 2 HD
+https://filoox.vercel.app/live/167576.m3u8
+#EXTINF:-1 tvg-id="167577" tvg-logo="https://i.pinimg.com/originals/c7/5d/56/c75d563b3cda837cd3fb1ce5ff5089cd.png" group-title="Sports", Star Sports 3 HD
+https://filoox.vercel.app/live/167577.m3u8
+#EXTINF:-1 tvg-id="167578" tvg-logo="https://static.epg.best/in/StarSportsSelect1.in.png" group-title="Sports", STAR SPORTS SELECT 1
+https://filoox.vercel.app/live/167578.m3u8
+#EXTINF:-1 tvg-id="167579" tvg-logo="https://static.epg.best/in/StarSportsSelect2.in.png" group-title="Sports", STAR SPORTS SELECT 2
+https://filoox.vercel.app/live/167579.m3u8
+#EXTINF:-1 tvg-id="382205" tvg-logo="https://upload.wikimedia.org/wikipedia/en/d/d3/Sports18_logo.svg" group-title="Sports", Sports 18
+https://filoox.vercel.app/live/382205.m3u8
+#EXTINF:-1 tvg-id="167581" tvg-logo="https://static.epg.best/my/AstroOnDemand361.my.png" group-title="Sports", Astro Cricket HD
+https://filoox.vercel.app/live/167581.m3u8
+#EXTINF:-1 tvg-id="167592" tvg-logo="http://logo.opplextv.com/logo/SuperSportCricket.png" group-title="Sports", SuperSport Cricket
+https://filoox.vercel.app/live/167592.m3u8
+#EXTINF:-1 tvg-id="167593" tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/f4/Fox_Cricket_Logo.png" group-title="Sports", FOX CRICKET 501
+https://filoox.vercel.app/live/167593.m3u8
+#EXTINF:-1 tvg-id="167594" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0e/Sky-sports-main-cricket.jpg" group-title="Sports", Sky Sports Cricket
+https://filoox.vercel.app/live/167594.m3u8
+#EXTINF:-1 tvg-id="167582" tvg-logo="https://5gtv.online:2053/logo/willowxtra1.png" group-title="Sports", Willow Xtra
+https://filoox.vercel.app/live/167582.m3u8
+#EXTINF:-1 tvg-id="167583" tvg-logo="https://static.epg.best/us/WillowCricket.us.png" group-title="Sports", Willow Cricket HD
+https://filoox.vercel.app/live/167583.m3u8
+#EXTINF:-1 tvg-id="167584" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/13-HD.png/120px-13-HD.png" group-title="Sports", beIN SPORT CRICKET
+https://filoox.vercel.app/live/167584.m3u8
+#EXTINF:-1 tvg-id="167585" tvg-logo="https://e7.pngegg.com/pngimages/317/742/png-clipart-europe-eurosport-1-television-channel-others-television-blue.png" group-title="Sports", EUROSPORT HD
+https://filoox.vercel.app/live/167585.m3u8
+#EXTINF:-1 tvg-id="167586" tvg-logo="http://s3.i3ns.net/cs/etc/blank-icon.png" group-title="Sports", 1SPORTS
+https://filoox.vercel.app/live/167586.m3u8
+#EXTINF:-1 tvg-id="167588" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/64/DD_Sports_new_logo.jpg" group-title="Sports", DD Sports
+https://filoox.vercel.app/live/167588.m3u8
+#EXTINF:-1 tvg-id="167590" tvg-logo="https://upload.wikimedia.org/wikipedia/en/1/11/T_Sports_logo.png" group-title="Sports", T-SPORTS
+https://filoox.vercel.app/live/167590.m3u8
+#EXTINF:-1 tvg-id="167591" tvg-logo="https://rtasportswear.com/wp-content/uploads/2020/03/logo-copy-300x123.png" group-title="Sports", RTA SPORTS
+https://filoox.vercel.app/live/167591.m3u8
+#EXTINF:-1 tvg-id="383062" tvg-logo="https://api.time.com/wp-content/uploads/2014/05/world-wrestling-entertainment.jpg" group-title="Sports", WWE HD
+https://filoox.vercel.app/live/383062.m3u8
+#EXTINF:-1 tvg-id="383065" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/WWE_Network_logo.svg/150px-WWE_Network_logo.svg.png" group-title="Sports", WWE Network HD
+https://filoox.vercel.app/live/383065.m3u8
+
+#Category: PAKISTAN
+#EXTINF:-1 tvg-id="25989" tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/f3/ARY_Digital_Logo_2.png" group-title="Pakistan", ARY DIGITAL HD
+https://filoox.vercel.app/live/25989.m3u8
+#EXTINF:-1 tvg-id="221339" tvg-logo="https://static.epg.best/pk/HumTV.pk.png" group-title="Pakistan", HUM TV HD
+https://filoox.vercel.app/live/221339.m3u8
+#EXTINF:-1 tvg-id="25983" tvg-logo="https://static.epg.best/pk/HumSitaray.pk.png" group-title="Pakistan", HUM SITARAY
+https://filoox.vercel.app/live/25983.m3u8
+#EXTINF:-1 tvg-id="103688" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e4/Hum_TV_2013.png" group-title="Pakistan", HUM EUROPE
+https://filoox.vercel.app/live/103688.m3u8
+#EXTINF:-1 tvg-id="103689" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Pakistan", HUM MASALA
+https://filoox.vercel.app/live/103689.m3u8
+#EXTINF:-1 tvg-id="207397" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b5/22-35-30-cropped-pashto-logo.png" group-title="Pakistan", Hum Pashto
+https://filoox.vercel.app/live/207397.m3u8
+#EXTINF:-1 tvg-id="25977" tvg-logo="https://static.epg.best/pk/HarPalGeo.pk.png" group-title="Pakistan", GEO ENTERTAINMENT FHD
+https://filoox.vercel.app/live/25977.m3u8
+#EXTINF:-1 tvg-id="221341" tvg-logo="https://static.epg.best/pk/Geokahani.pk.png" group-title="Pakistan", GEO KAHANI HD
+https://filoox.vercel.app/live/221341.m3u8
+#EXTINF:-1 tvg-id="103703" tvg-logo="https://upload.wikimedia.org/wikipedia/en/3/36/PTV_Home.png" group-title="Pakistan", PTV HOME HD
+https://filoox.vercel.app/live/103703.m3u8
+#EXTINF:-1 tvg-id="389825" tvg-logo="https://setentertainment.tv/wp-content/uploads/2024/03/logo.png" group-title="Pakistan", Set Entertainment
+https://filoox.vercel.app/live/389825.m3u8
+
+#Category: KIDS
+#EXTINF:-1 tvg-id="150478" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/2000px-Cartoon_Network_2010_logo.svg.png" group-title="Kids", Cartoon Network
+https://filoox.vercel.app/live/150478.m3u8
+#EXTINF:-1 tvg-id="150483" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/89/POGO-logo.png" group-title="Kids", Pogo
+https://filoox.vercel.app/live/150483.m3u8
+#EXTINF:-1 tvg-id="153154" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c5/Cartoon_Network_HD%2B_India_logo.png" group-title="Kids", Cartoon Network HD+
+https://filoox.vercel.app/live/153154.m3u8
+#EXTINF:-1 tvg-id="26187" tvg-logo="https://static.epg.best/in/SonyYAY.in.png" group-title="Kids", Sony YAY
+https://filoox.vercel.app/live/26187.m3u8
+#EXTINF:-1 tvg-id="150480" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f2/Hungama_tv_logo.png" group-title="Kids", Hungama TV
+https://filoox.vercel.app/live/150480.m3u8
+#EXTINF:-1 tvg-id="150482" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Nickelodeon_2009_logo.svg/1200px-Nickelodeon_2009_logo.svg.png" group-title="Kids", Nickelodeon
+https://filoox.vercel.app/live/150482.m3u8
+#EXTINF:-1 tvg-id="76723" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2016_Discovery_Kids_logo.svg/220px-2016_Discovery_Kids_logo.svg.png" group-title="Kids", Discovery Kids
+https://filoox.vercel.app/live/76723.m3u8
+#EXTINF:-1 tvg-id="150479" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Kids", Chutti TV
+https://filoox.vercel.app/live/150479.m3u8
+#EXTINF:-1 tvg-id="167551" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/2014_Disney_Channel_logo.svg/1200px-2014_Disney_Channel_logo.svg.png" group-title="Kids", DISNEY HD
+https://filoox.vercel.app/live/167551.m3u8
+#EXTINF:-1 tvg-id="34011" tvg-logo="https://static.epg.best/in/NickHDPlus.in.png" group-title="Kids", NICK SONIC
+https://filoox.vercel.app/live/34011.m3u8
+#EXTINF:-1 tvg-id="76722" tvg-logo="https://static.epg.best/in/NickHDPlus.in.png" group-title="Kids", NICK HD+ [FHD]
+https://filoox.vercel.app/live/76722.m3u8
+#EXTINF:-1 tvg-id="383066" tvg-logo="http://b1g.fun/logos2/kids_zone.jpg" group-title="Kids", Kids Zone+ HD
+https://filoox.vercel.app/live/383066.m3u8
+
+#Category: MUSIC
+#EXTINF:-1 tvg-id="66190" tvg-logo="https://static.epg.best/in/Zoom.in.png" group-title="Music", Zoom TV
+https://filoox.vercel.app/live/66190.m3u8
+#EXTINF:-1 tvg-id="66192" tvg-logo="https://static.epg.best/in/9XM.in.png" group-title="Music", 9xm
+https://filoox.vercel.app/live/66192.m3u8
+#EXTINF:-1 tvg-id="66203" tvg-logo="https://static.epg.best/in/B4UMusic.in.png" group-title="Music", B4u Music
+https://filoox.vercel.app/live/66203.m3u8
+#EXTINF:-1 tvg-id="66226" tvg-logo="https://static.epg.best/in/9XJalwa.in.png" group-title="Music", 9x Jalwa
+https://filoox.vercel.app/live/66226.m3u8
+#EXTINF:-1 tvg-id="66289" tvg-logo="https://static.epg.best/in/9XTashan.in.png" group-title="Music", 9x Tashan
+https://filoox.vercel.app/live/66289.m3u8
+#EXTINF:-1 tvg-id="112988" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Music", Mastii
+https://filoox.vercel.app/live/112988.m3u8
+
+#Category: INDIAN ENTERTAINMENT
+#EXTINF:-1 tvg-id="66163" tvg-logo="https://static.epg.best/sg/ZeeTV.sg.png" group-title="Indian Entertainment", Zee TV [FHD]
+https://filoox.vercel.app/live/66163.m3u8
+#EXTINF:-1 tvg-id="66165" tvg-logo="https://static.epg.best/gb/SonyEntertainmentAsia.uk.png" group-title="Indian Entertainment", Sony SET [FHD]
+https://filoox.vercel.app/live/66165.m3u8
+#EXTINF:-1 tvg-id="66208" tvg-logo="https://static.epg.best/nz/StarPlusHindi.nz.png" group-title="Indian Entertainment", Star Plus FHD
+https://filoox.vercel.app/live/66208.m3u8
+#EXTINF:-1 tvg-id="66168" tvg-logo="https://static.epg.best/gb/Colors.uk.png" group-title="Indian Entertainment", Colors [FHD]
+https://filoox.vercel.app/live/66168.m3u8
+#EXTINF:-1 tvg-id="66171" tvg-logo="https://static.epg.best/in/StarBharat.in.png" group-title="Indian Entertainment", Star Bharat [FHD]
+https://filoox.vercel.app/live/66171.m3u8
+#EXTINF:-1 tvg-id="66174" tvg-logo="https://static.epg.best/in/SonySAB.in.png" group-title="Indian Entertainment", Sony Sab HD
+https://filoox.vercel.app/live/66174.m3u8
+#EXTINF:-1 tvg-id="66180" tvg-logo="https://static.epg.best/in/SonyMax.in.png" group-title="Indian Entertainment", Sony Max [FHD]
+https://filoox.vercel.app/live/66180.m3u8
+#EXTINF:-1 tvg-id="66189" tvg-logo="https://static.epg.best/in/SonyMax2.in.png" group-title="Indian Entertainment", SONY MAX 2
+https://filoox.vercel.app/live/66189.m3u8
+#EXTINF:-1 tvg-id="112972" tvg-logo="http://logo.opplextv.com/logo/goldmines.jpg" group-title="Indian Entertainment", GOLDMINES
+https://filoox.vercel.app/live/112972.m3u8
+
+#Category: DOCUMENTARY
+#EXTINF:-1 tvg-id="206278" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/44/BBC_Earth_logo.png/220px-BBC_Earth_logo.png" group-title="Documentary", BBC EARTH HINDI
+https://filoox.vercel.app/live/206278.m3u8
+#EXTINF:-1 tvg-id="206282" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Animal_Planet_logo.svg/797px-Animal_Planet_logo.svg.png" group-title="Documentary", Animal Planet Hindi
+https://filoox.vercel.app/live/206282.m3u8
+#EXTINF:-1 tvg-id="206285" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/1280px-Natgeologo.svg.png" group-title="Documentary", Nat Geo HD Hindi
+https://filoox.vercel.app/live/206285.m3u8
+#EXTINF:-1 tvg-id="206286" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Geographic_Wild_logo.svg/1200px-National_Geographic_Wild_logo.svg.png" group-title="Documentary", Nat Geo Wild HINDI
+https://filoox.vercel.app/live/206286.m3u8
+#EXTINF:-1 tvg-id="206287" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2019_Discovery_logo.svg/2560px-2019_Discovery_logo.svg.png" group-title="Documentary", Discovery Hindi
+https://filoox.vercel.app/live/206287.m3u8
+
+#Category: BANGLADESH
+#EXTINF:-1 tvg-id="245893" tvg-logo="http://openboxv8s.com/india/zee_bangla.jpg" group-title="Bangladesh", Zee Bangla HD
+https://filoox.vercel.app/live/245893.m3u8
+#EXTINF:-1 tvg-id="245895" tvg-logo="https://filexo.vercel.app/image/sultanarabi161.jpg" group-title="Bangladesh", Colors Bangla
+https://filoox.vercel.app/live/245895.m3u8
+#EXTINF:-1 tvg-id="245897" tvg-logo="http://openboxv8s.com/india/zee_bangla_cinema.jpg" group-title="Bangladesh", Zee Bangla Cinema
+https://filoox.vercel.app/live/245897.m3u8
+#EXTINF:-1 tvg-id="245898" tvg-logo="http://openboxv8s.com/india/star_jalsha.png" group-title="Bangladesh", Star Jalsa HD
+https://filoox.vercel.app/live/245898.m3u8
+#EXTINF:-1 tvg-id="245900" tvg-logo="http://openboxv8s.com/india/star_jalsha_movies_in.png" group-title="Bangladesh", Jalsa Movies HD
+https://filoox.vercel.app/live/245900.m3u8
+#EXTINF:-1 tvg-id="245906" tvg-logo="https://upload.wikimedia.org/wikipedia/en/b/b3/Sun_Bangla.png" group-title="Bangladesh", SUN Bangla
+https://filoox.vercel.app/live/245906.m3u8
+#EXTINF:-1 tvg-id="245954" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSOYXIeK79V_LpWCfGMDVyHvm65EaId7IfkUHFh=s900-c-k-c0x00ffffff-no-rj" group-title="Bangladesh", ENTER 10 BANGLA
+https://filoox.vercel.app/live/245954.m3u8
+#EXTINF:-1 tvg-id="245966" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVm4taJa_vh5IdvTj1Idg_C99OqDD56bLMFQ&usqp=CAU" group-title="Bangladesh", DISCOVERY BANGLA
+https://filoox.vercel.app/live/245966.m3u8
+#EXTINF:-1 tvg-id="245967" tvg-logo="http://b1g.fun/logos2/net_geo_hindihd.jpg" group-title="Bangladesh", NAT GEO BANGLA
+https://filoox.vercel.app/live/245967.m3u8
+#EXTINF:-1 tvg-id="245989" tvg-logo="https://upload.wikimedia.org/wikipedia/en/d/d4/Sony_Aath_new.png" group-title="Bangladesh", SONY AATH
+https://filoox.vercel.app/live/245989.m3u8

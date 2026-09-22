@@ -5,7 +5,7 @@ const CONFIG = {
     ORIG: 'https://image.tmdb.org/t/p/original',
     SERVERS: [
         { name: 'VidAPI',   icon: 'fa-bolt',   movie: id=>`https://vidapi.xyz/embed/movie/${id}`,       tv:(id,s,e)=>`https://vidapi.xyz/embed/tv/${id}&s=${s}&e=${e}` },
-        { name: 'VidSrc',   icon: 'fa-server', movie: id=>`https://vidsrc.xyz/embed/movie/${id}`,       tv:(id,s,e)=>`https://vidsrc.xyz/embed/tv/${id}/${s}/${e}` },
+        { name: 'VidSrc',   icon: 'fa-server', movie: id=>`https://vidsrc.me/embed/movie/${id}`,       tv:(id,s,e)=>`https://vidsrc.me/embed/tv/${id}/${s}/${e}` },
         { name: '2Embed',   icon: 'fa-play-circle', movie: id=>`https://www.2embed.cc/embed/${id}`,    tv:(id,s,e)=>`https://www.2embed.cc/embedtv/${id}&s=${s}&e=${e}` },
     ],
     PLATFORMS: [

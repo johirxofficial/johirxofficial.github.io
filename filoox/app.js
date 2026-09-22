@@ -4,9 +4,15 @@ const CONFIG = {
     W500: 'https://image.tmdb.org/t/p/w500',
     ORIG: 'https://image.tmdb.org/t/p/original',
     SERVERS: [
-        { name: 'VidAPI',   icon: 'fa-bolt',   movie: id=>`https://vidapi.xyz/embed/movie/${id}`,       tv:(id,s,e)=>`https://vidapi.xyz/embed/tv/${id}&s=${s}&e=${e}` },
-        { name: 'VidSrc',   icon: 'fa-server', movie: id=>`https://vidsrc.me/embed/movie/${id}`,       tv:(id,s,e)=>`https://vidsrc.me/embed/tv/${id}/${s}/${e}` },
-        { name: '2Embed',   icon: 'fa-play-circle', movie: id=>`https://www.2embed.cc/embed/${id}`,    tv:(id,s,e)=>`https://www.2embed.cc/embedtv/${id}&s=${s}&e=${e}` },
+    { name: 'VidAPI',    icon: 'fa-bolt',        movie: id=>`https://vidapi.xyz/embed/movie/${id}`, tv:(id,s,e)=>`https://vidapi.xyz/embed/tv/${id}&s=${s}&e=${e}` },
+    { name: 'VidSrc',    icon: 'fa-server',      movie: id=>`https://vidsrc.me/embed/movie/${id}`, tv:(id,s,e)=>`https://vidsrc.me/embed/tv/${id}/${s}/${e}` },
+    { name: '2Embed',    icon: 'fa-play-circle', movie: id=>`https://www.2embed.cc/embed/${id}`,    tv:(id,s,e)=>`https://www.2embed.cc/embedtv/${id}&s=${s}&e=${e}` },
+    
+    // --- New source ---
+    { name: 'VidSrc.to', icon: 'fa-film',        movie: id=>`https://vidsrc.to/embed/movie/${id}`, tv:(id,s,e)=>`https://vidsrc.to/embed/tv/${id}/${s}/${e}` },
+    { name: 'SuperEmbed',icon: 'fa-bolt',        movie: id=>`https://multiembed.mov/?video_id=${id}&tmdb=1`, tv:(id,s,e)=>`https://multiembed.mov/?video_id=${id}&tmdb=1&s=${s}&e=${e}` },
+    { name: 'SmashyStream',icon:'fa-tv',         movie: id=>`https://embed.smashystream.com/playere.php?tmdb=${id}`, tv:(id,s,e)=>`https://embed.smashystream.com/playere.php?tmdb=${id}&s=${s}&e=${e}` },
+    { name: 'MovieAPI',  icon: 'fa-video',       movie: id=>`https://movieapi.club/movie/${id}`,   tv:(id,s,e)=>`https://movieapi.club/tv/${id}-${s}-${e}` }
     ],
     PLATFORMS: [
         { id:'',    name:'All',       code:'all',     region:'IN' },

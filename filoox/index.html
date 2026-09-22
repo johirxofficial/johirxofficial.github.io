@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#050507">
+    <title>TioPlay - Stream Movies & TV Shows Online Free</title>
+    <meta name="description" content="TioPlay - Stream Movies & TV Shows Online Free">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================================================ PROGRESS BAR ============================================================ -->
+    <div id="progress-bar-outer"><div id="progress-bar-inner"></div></div>
+    <!-- TOAST -->
+    <div class="toast-wrap" id="toast-wrap">
+        <div class="toast-inner success" id="toast-inner">
+            <i class="fas fa-check-circle toast-icon" id="toast-icon"></i>
+            <span id="toast-text">Done!</span>
+        </div>
+    </div>
+
+    <!-- ============================================================ MODALS ============================================================ -->
+    <div class="modal-veil" id="modal-veil">
+        <button class="modal-x-btn" onclick="Modals.closeAll()"><i class="fas fa-times"></i></button>
+        <!-- QUICK VIEW -->
+        <div class="qv-box" id="qv-box">
+            <div class="qv-layout">
+                <div class="qv-poster-col">
+                    <img alt="Poster" id="qv-img" src="">
+                    <div class="qv-poster-gradient"></div>
+                </div>
+                <div class="qv-body">
+                    <h2 class="qv-title" id="qv-title">Title</h2>
+                    <div class="qv-meta-row">
+                        <span class="qv-year" id="qv-year">2024</span>
+                        <div class="qv-rating-pill"><i class="fas fa-star"></i><span id="qv-rating">8.5</span></div>
+                        <span class="qv-quality">HD</span>
+                    </div>
+                    <div class="qv-genres" id="qv-genres"></div>
+                    <p class="qv-desc" id="qv-desc">Overview...</p>
+                    <div class="qv-actions">
+                        <button class="btn-qv-play" id="qv-play-btn"><i class="fas fa-play"></i> Watch Now</button>
+                        <button class="btn-qv-trailer" id="qv-trailer-btn"><i class="fab fa-youtube"></i> Trailer</button>
+                        <button class="btn-qv-wl" id="qv-wl-btn" title="Add to My List"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FULL VIEW -->
+        <div class="fv-box" id="fv-box">
+            <div class="fv-ambient" id="fv-ambient"></div>
+            <div class="fv-content">
+                <div class="player-wrapper">
+                    <iframe allowfullscreen="true" class="player-iframe" frameborder="0" id="main-player" src=""></iframe>
+                </div>
+                <div class="player-controls">
+                    <div class="server-tabs" id="server-tabs"></div>
+                    <div class="ep-row" id="ep-row" style="display:none">
+                        <div class="ep-input-box"><span class="ep-label">S</span><input id="ep-season" min="1" type="number" value="1"></div>
+                        <div class="ep-input-box"><span class="ep-label">E</span><input id="ep-episode" min="1" type="number" value="1"></div>
+                        <button class="btn-ep-play" id="btn-ep-go"><i class="fas fa-play"></i> Play</button>
+                    </div>
+                </div>
+                <div class="fv-info-grid">
+                    <div><img alt="Poster" class="fv-poster" id="fv-poster" src=""></div>
+                    <div>
+                        <h1 class="fv-title" id="fv-title">Title</h1>
+                        <div class="fv-meta">
+                            <span id="fv-year">2024</span><span>•</span><span id="fv-runtime">2h 10m</span><span>•</span>
+                            <div class="fv-rating-pill"><i class="fas fa-star"></i><span id="fv-rating">8.5</span></div>
+                        </div>
+                        <div class="social-bar" style="margin-bottom:28px">
+                            <div class="social-btn wl" id="fv-wl-btn" title="My List"><i class="fas fa-plus"></i></div>
+                            <div class="social-btn" onclick="Utils.copyLink()" title="Copy Link"><i class="fas fa-link"></i></div>
+                            <div class="social-btn twitter" onclick="Utils.share('twitter')" title="Twitter"><i class="fab fa-twitter"></i></div>
+                            <div class="social-btn whatsapp" onclick="Utils.share('whatsapp')" title="WhatsApp"><i class="fab fa-whatsapp"></i></div>
+                        </div>
+                        <div class="fv-tabs">
+                            <button class="fv-tab active" data-tab="overview" onclick="FVTabs.show('overview', this)">Overview</button>
+                            <button class="fv-tab" data-tab="cast" onclick="FVTabs.show('cast', this)">Cast</button>
+                            <button class="fv-tab" data-tab="similar" onclick="FVTabs.show('similar', this)">Similar</button>
+                        </div>
+                        <div class="fv-tab-pane active" id="tab-overview"><p class="fv-desc" id="fv-desc">Description</p></div>
+                        <div class="fv-tab-pane" id="tab-cast"><div class="hz-people" id="fv-cast"></div></div>
+                        <div class="fv-tab-pane" id="tab-similar"><div class="hz-related" id="fv-related"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ NAVBAR ============================================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-left">
+            <div class="logo" onclick="App.goHome()">
+                <div class="logo-icon"><i class="fas fa-play"></i></div> TioPlay
+            </div>
+            <div class="nav-links">
+                <button class="nav-btn active" data-nav="movie" onclick="App.setType('movie')">Movies</button>
+                <button class="nav-btn" data-nav="tv" onclick="App.setType('tv')">TV Shows</button>
+                <button class="nav-btn" data-nav="watchlist" onclick="App.showWatchlist()"><i class="fas fa-heart"></i> My List</button>
+            </div>
+        </div>
+        <div class="nav-right">
+            <button class="mobile-search-toggle" onclick="document.getElementById('main-search-wrap').classList.toggle('mobile-open')"><i class="fas fa-search"></i></button>
+            <div class="search-wrap" id="main-search-wrap">
+                <div class="search-bar">
+                    <i class="fas fa-search search-icon-btn" onclick="Search.execute()"></i>
+                    <input autocomplete="off" id="search-input" placeholder="Search movies, shows..." type="text">
+                    <i class="fas fa-microphone voice-btn" id="voice-btn" title="Voice Search"></i>
+                </div>
+                <div class="search-dropdown" id="search-dropdown">
+                    <div class="sdrop-label">Quick Results</div>
+                    <div id="sdrop-results"></div>
+                    <div class="sdrop-label">Recent</div>
+                    <div class="sdrop-recent" id="sdrop-recent"></div>
+                </div>
+            </div>
+            <button class="notif-btn" id="notif-btn" title="Notifications">
+                <i class="fas fa-bell"></i><span class="notif-badge" id="notif-badge"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================================ MAIN APP VIEW ============================================================ -->
+    <div id="app-view">
+        <!-- OTT PLATFORMS -->
+        <div class="ott-section">
+            <div class="ott-label"><i class="fas fa-bolt" style="color:var(--brand-gold)"></i> Explore Platforms</div>
+            <div class="ott-scroll" id="ott-tabs"></div>
+        </div>
+
+        <!-- HERO SLIDER -->
+        <div class="hero-section" id="hero-wrap">
+            <div class="hero-stage">
+                <div class="hero-track" id="hero-track"></div>
+                <div class="hero-controls">
+                    <div class="hero-dots" id="hero-dots"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STATS BAR -->
+        <div class="stats-bar" id="stats-bar">
+            <div class="stat-item"><span class="stat-num" id="stat-movies">1110K+</span><span class="stat-label">Movies</span></div><div class="stat-divider"></div>
+            <div class="stat-item"><span class="stat-num" id="stat-shows">216K+</span><span class="stat-label">TV Shows</span></div><div class="stat-divider"></div>
+            <div class="stat-item"><span class="stat-num">4K</span><span class="stat-label">HDR Quality</span></div><div class="stat-divider"></div>
+            <div class="stat-item"><span class="stat-num">Free</span><span class="stat-label">No Subscription</span></div>
+        </div>
+
+        <!-- CONTINUE WATCHING -->
+        <div class="content-rows" id="continue-section" style="display:none">
+            <div class="row-section">
+                <div class="section-header">
+                    <span class="section-title"><i class="fas fa-history"></i> Continue Watching</span>
+                    <button class="see-all-btn" onclick="ContinueWatch.clearAll()">Clear All <i class="fas fa-trash-alt"></i></button>
+                </div>
+                <div class="hz-row" id="continue-row"></div>
+            </div>
+        </div>
+
+        <!-- HOME CONTENT ROWS -->
+        <div class="content-rows" id="home-rows">
+            <div class="row-section"><div class="section-header"><span class="section-title"><i class="fas fa-calendar-alt"></i> New Releases</span><button class="see-all-btn" onclick="HomeRows.seeAll('new_releases','New Releases')">See All <i class="fas fa-chevron-right"></i></button></div><div class="hz-row" id="row-new"></div></div>
+            <div class="row-section"><div class="section-header"><span class="section-title"><i class="fas fa-trophy"></i> Top Rated</span><button class="see-all-btn" onclick="HomeRows.seeAll('top_rated','Top Rated')">See All <i class="fas fa-chevron-right"></i></button></div><div class="hz-row" id="row-top"></div></div>
+            
+            <!-- FEATURED COLLECTION BANNER -->
+            <div class="collection-banner" onclick="HomeRows.seeAll('action','Action &amp; Thriller')">
+                <div class="collection-banner-bg" id="collection-bg"></div>
+                <div class="collection-banner-glow"></div>
+                <div class="collection-banner-content">
+                    <div>
+                        <div class="collection-label"><i class="fas fa-fire"></i> Featured Collection</div>
+                        <div class="collection-title">Action &amp; Thriller</div>
+                        <div class="collection-sub">Heart-pounding movies &amp; shows hand-picked for you</div>
+                    </div>
+                    <button class="collection-cta"><i class="fas fa-play"></i> Explore Now</button>
+                </div>
+            </div>
+
+            <div class="row-section"><div class="section-header"><span class="section-title"><i class="fas fa-language"></i> Bengali Cinema</span><button class="see-all-btn" onclick="HomeRows.seeAll('bengali','Bengali Cinema')">See All <i class="fas fa-chevron-right"></i></button></div><div class="hz-row" id="row-bengali"></div></div>
+            <div class="row-section"><div class="section-header"><span class="section-title"><i class="fas fa-film"></i> Hindi Movies</span><button class="see-all-btn" onclick="HomeRows.seeAll('hindi','Hindi Movies')">See All <i class="fas fa-chevron-right"></i></button></div><div class="hz-row" id="row-hindi"></div></div>
+            <div class="row-section"><div class="section-header"><span class="section-title"><i class="fas fa-globe-asia"></i> Korean Drama</span><button class="see-all-btn" onclick="HomeRows.seeAll('korean','Korean Drama')">See All <i class="fas fa-chevron-right"></i></button></div><div class="hz-row" id="row-korean"></div></div>
+            <div class="row-section"><div class="section-header"><span class="section-title"><i class="fas fa-bolt"></i> Action &amp; Thriller</span><button class="see-all-btn" onclick="HomeRows.seeAll('action','Action &amp; Thriller')">See All <i class="fas fa-chevron-right"></i></button></div><div class="hz-row" id="row-action"></div></div>
+            <div class="row-section"><div class="section-header"><span class="section-title"><i class="fas fa-tv"></i> Popular Web Series</span><button class="see-all-btn" onclick="HomeRows.seeAll('webseries','Web Series')">See All <i class="fas fa-chevron-right"></i></button></div><div class="hz-row" id="row-web"></div></div>
+        </div>
+
+        <!-- BROWSE / SEARCH VIEW -->
+        <div id="browse-view" style="display:none">
+            <div class="mood-bar" id="mood-bar">
+                <div class="mood-chip active" data-mood="" onclick="Mood.set(this,'')"><span class="mood-emoji">🎬</span> All</div>
+                <div class="mood-chip" data-mood="action" onclick="Mood.set(this,'action')"><span class="mood-emoji">💥</span> Action</div>
+                <div class="mood-chip" data-mood="comedy" onclick="Mood.set(this,'comedy')"><span class="mood-emoji">😂</span> Comedy</div>
+                <div class="mood-chip" data-mood="romance" onclick="Mood.set(this,'romance')"><span class="mood-emoji">❤️</span> Romance</div>
+                <div class="mood-chip" data-mood="horror" onclick="Mood.set(this,'horror')"><span class="mood-emoji">👻</span> Horror</div>
+                <div class="mood-chip" data-mood="scifi" onclick="Mood.set(this,'scifi')"><span class="mood-emoji">🚀</span> Sci-Fi</div>
+                <div class="mood-chip" data-mood="thriller" onclick="Mood.set(this,'thriller')"><span class="mood-emoji">🔪</span> Thriller</div>
+                <div class="mood-chip" data-mood="animation" onclick="Mood.set(this,'animation')"><span class="mood-emoji">🎨</span> Animation</div>
+                <div class="mood-chip" data-mood="documentary" onclick="Mood.set(this,'documentary')"><span class="mood-emoji">📹</span> Documentary</div>
+                <div class="mood-chip" data-mood="family" onclick="Mood.set(this,'family')"><span class="mood-emoji">👨‍👩‍👧</span> Family</div>
+            </div>
+            <div class="controls-bar">
+                <div class="controls-left">
+                    <div class="view-heading" id="view-heading"><i class="fas fa-fire"></i> Trending</div>
+                    <div class="lang-tabs">
+                        <button class="lang-btn active" onclick="App.setLang('',event)">All</button>
+                        <button class="lang-btn" onclick="App.setLang('en',event)">English</button>
+                        <button class="lang-btn" onclick="App.setLang('hi',event)">Hindi</button>
+                        <button class="lang-btn" onclick="App.setLang('bn',event)">Bengali</button>
+                        <button class="lang-btn" onclick="App.setLang('ko',event)">Korean</button>
+                    </div>
+                </div>
+                <div class="controls-right">
+                    <button class="ctrl-btn" id="filter-toggle-btn" onclick="FilterPanel.toggle()" title="Filters"><i class="fas fa-sliders-h"></i></button>
+                    <button class="ctrl-btn active" id="btn-grid-view" onclick="App.setView('grid')"><i class="fas fa-th-large"></i></button>
+                    <button class="ctrl-btn" id="btn-list-view" onclick="App.setView('list')"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+
+            <!-- Filter Panel -->
+            <div class="filter-panel" id="filter-panel">
+                <div class="filter-grid">
+                    <div class="filter-group">
+                        <h4>Genre</h4>
+                        <div class="genre-cloud" id="genre-cloud"></div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Release Year</h4>
+                        <div class="range-wrap">
+                            <input class="range-slider" id="filter-year" max="2030" min="1990" oninput="document.getElementById('yr-val').textContent=this.value" type="range" value="2024">
+                            <div class="range-display"><span>1990</span><span class="range-val" id="yr-val">2024</span></div>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Min. Rating</h4>
+                        <div class="range-wrap">
+                            <input class="range-slider" id="filter-rating" max="10" min="0" oninput="document.getElementById('rt-val').textContent=this.value" step="0.5" type="range" value="5">
+                            <div class="range-display"><span>0</span><span class="range-val" id="rt-val">5.0</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-actions">
+                    <button class="btn-ghost" onclick="FilterPanel.reset()">Reset Filters</button>
+                    <button class="btn-primary" onclick="FilterPanel.apply()">Apply Filters</button>
+                </div>
+            </div>
+
+            <!-- Media Grid -->
+            <div class="media-section">
+                <div class="media-grid" id="media-grid"></div>
+                <div class="load-more-area" id="load-more-area">
+                    <button class="btn-load-more" id="btn-load-more" onclick="App.loadMore()"><i class="fas fa-sync-alt"></i> Load More</button>
+                </div>
+                <div id="scroll-sentinel"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOBILE BOTTOM NAV -->
+    <nav class="bottom-nav" id="bottom-nav">
+        <button class="bnav-btn active" data-tab="home" onclick="MobNav.go('home',this)"><i class="fas fa-home"></i><span>Home</span></button>
+        <button class="bnav-btn" data-tab="movies" onclick="MobNav.go('movies',this)"><i class="fas fa-film"></i><span>Movies</span></button>
+        <button class="bnav-btn" data-tab="tv" onclick="MobNav.go('tv',this)"><i class="fas fa-tv"></i><span>TV Shows</span></button>
+        <button class="bnav-btn" data-tab="mylist" onclick="MobNav.go('mylist',this)"><i class="fas fa-heart"></i><span>My List</span></button>
+        <button class="bnav-btn" data-tab="search" onclick="MobNav.go('search',this)"><i class="fas fa-search"></i><span>Search</span></button>
+    </nav>
+
+    <!-- External JS -->
+    <script src="app.js"></script>
+</body>
+</html>

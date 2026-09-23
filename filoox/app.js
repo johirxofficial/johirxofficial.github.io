@@ -9,6 +9,7 @@ const CONFIG = {
     { name: '2Embed',    icon: 'fa-play-circle', movie: id=>`https://www.2embed.cc/embed/${id}`,    tv:(id,s,e)=>`https://www.2embed.cc/embedtv/${id}&s=${s}&e=${e}` },
     
     // --- New source ---
+    { name: 'vidsrc.buzz', icon: 'fa-film',      movie: id=>`https://vidsrc.buzz/embed/movie/${id}`, tv:(id,s,e)=>`https://vidsrc.buzz/embed/tv/${id}/${s}/${e}` },
     { name: 'VidSrc.to', icon: 'fa-film',        movie: id=>`https://vidsrc.to/embed/movie/${id}`, tv:(id,s,e)=>`https://vidsrc.to/embed/tv/${id}/${s}/${e}` },
     { name: 'SuperEmbed',icon: 'fa-bolt',        movie: id=>`https://multiembed.mov/?video_id=${id}&tmdb=1`, tv:(id,s,e)=>`https://multiembed.mov/?video_id=${id}&tmdb=1&s=${s}&e=${e}` },
     { name: 'SmashyStream',icon:'fa-tv',         movie: id=>`https://embed.smashystream.com/playere.php?tmdb=${id}`, tv:(id,s,e)=>`https://embed.smashystream.com/playere.php?tmdb=${id}&s=${s}&e=${e}` },
